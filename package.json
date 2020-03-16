@@ -16,5 +16,8 @@
   "bugs": {
     "url": "https://github.com/XueYingLin/CakeShop-with-Redux/issues"
   },
-  "homepage": "https://github.com/XueYingLin/CakeShop-with-Redux#readme"
+  "homepage": "https://github.com/XueYingLin/CakeShop-with-Redux#readme",
+  "dependencies": {
+    "redux": "^4.0.5"
+  }
 }
