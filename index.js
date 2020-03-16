@@ -1,3 +1,5 @@
+import bindActionCreators from "redux/src/bindActionCreators"
+
 const BUY_CAKE = 'BUY_CAKE'//declare the type of the action
 
 //define the action
@@ -9,6 +11,23 @@ function buyCake() {
         type: BUY_CAKE, //type property
         info: 'First redux action'
     
+    }
+
+}
+
+//(previousState, action) => newState
+const initialState = {
+    numberOFCakes: 10
+}
+
+const reducer = (state = initialState, action ) => {
+    switch(action.type) {
+        case BUY_CAKE: return {
+            ...state, //always good to have more than one state because the initialState is an Object
+            numberOFCakes: state.numberOFCakes - 1
+        }
+
+        default: return state
     }
 
 }
